@@ -8,7 +8,7 @@
 
 import Foundation
 
-class R {
+public class R {
     
     struct ResId {
         var value: String = ""
