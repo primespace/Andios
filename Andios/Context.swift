@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Context {
+public protocol Context {
     
     func getActivity() -> AppCompatActivity
 }

@@ -8,22 +8,22 @@
 
 import UIKit
 
-class ActionBar {
+public class ActionBar {
     
     var context: Context
     
-    init(_ context: Context) {
+    public init(_ context: Context) {
         self.context = context
     }
     
     
-    func setHomeAsUpIndicator(_ drawable: R.ResId)
+    public func setHomeAsUpIndicator(_ drawable: R.ResId)
     {
         let activity = self.context.getActivity()
         activity.setHomeAsUpIndicator(drawable)
     }
     
-    func setTitle(_ title: String, _ color: UIColor = UIColor.white)
+    public func setTitle(_ title: String, _ color: UIColor = UIColor.white)
     {
         let activity = self.context.getActivity()
         activity.setTitle(title, color)

@@ -102,7 +102,7 @@ open class AppCompatActivity: UIViewController, Context {
         return self.actionBar
     }
     
-    func getActivity() -> AppCompatActivity {
+    public func getActivity() -> AppCompatActivity {
         return self
     }
     
