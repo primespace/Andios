@@ -10,7 +10,7 @@ import UIKit
 
 public class ActionBar {
     
-    var context: Context
+    public var context: Context
     
     public init(_ context: Context) {
         self.context = context

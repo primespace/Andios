@@ -15,6 +15,8 @@
 		2966D6272055133600969AFC /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D6262055133600969AFC /* Intent.swift */; };
 		2966D6292055137300969AFC /* MenuInflater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D6282055137300969AFC /* MenuInflater.swift */; };
 		2966D62B205513D900969AFC /* ActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D62A205513D900969AFC /* ActionBar.swift */; };
+		2966D62D2055495800969AFC /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D62C2055495800969AFC /* Assert.swift */; };
+		2966D62F2055497000969AFC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D62E2055497000969AFC /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2966D6262055133600969AFC /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intent.swift; sourceTree = "<group>"; };
 		2966D6282055137300969AFC /* MenuInflater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInflater.swift; sourceTree = "<group>"; };
 		2966D62A205513D900969AFC /* ActionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionBar.swift; sourceTree = "<group>"; };
+		2966D62C2055495800969AFC /* Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
+		2966D62E2055497000969AFC /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				2966D6282055137300969AFC /* MenuInflater.swift */,
 				2966D61A2055011F00969AFC /* R.swift */,
 				2966D61C205509B100969AFC /* Theme.swift */,
+				2966D62C2055495800969AFC /* Assert.swift */,
+				2966D62E2055497000969AFC /* Logger.swift */,
 			);
 			path = Andios;
 			sourceTree = "<group>";
@@ -157,9 +163,11 @@
 				2966D6292055137300969AFC /* MenuInflater.swift in Sources */,
 				2966D623205512F000969AFC /* Menu.swift in Sources */,
 				2966D6252055131600969AFC /* Context.swift in Sources */,
+				2966D62F2055497000969AFC /* Logger.swift in Sources */,
 				2966D62B205513D900969AFC /* ActionBar.swift in Sources */,
 				2966D621205512CD00969AFC /* AppCompatActivity.swift in Sources */,
 				2966D6272055133600969AFC /* Intent.swift in Sources */,
+				2966D62D2055495800969AFC /* Assert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
