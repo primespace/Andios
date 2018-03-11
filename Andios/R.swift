@@ -30,9 +30,7 @@ public class R {
     
     public class android {
         public class id {
-            static let home = 100000
+            public static let home = 100000
         }
     }
-    
-    
 }

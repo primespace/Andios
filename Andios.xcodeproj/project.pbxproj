@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2966D6122054F5E700969AFC /* Andios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2966D6102054F5E700969AFC /* Andios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2966D61B2055011F00969AFC /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D61A2055011F00969AFC /* R.swift */; };
-		2966D61D205509B100969AFC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D61C205509B100969AFC /* AppTheme.swift */; };
+		2966D61D205509B100969AFC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966D61C205509B100969AFC /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +17,7 @@
 		2966D6102054F5E700969AFC /* Andios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Andios.h; sourceTree = "<group>"; };
 		2966D6112054F5E700969AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2966D61A2055011F00969AFC /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
-		2966D61C205509B100969AFC /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		2966D61C205509B100969AFC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 				2966D6102054F5E700969AFC /* Andios.h */,
 				2966D6112054F5E700969AFC /* Info.plist */,
 				2966D61A2055011F00969AFC /* R.swift */,
-				2966D61C205509B100969AFC /* AppTheme.swift */,
+				2966D61C205509B100969AFC /* Theme.swift */,
 			);
 			path = Andios;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2966D61B2055011F00969AFC /* R.swift in Sources */,
-				2966D61D205509B100969AFC /* AppTheme.swift in Sources */,
+				2966D61D205509B100969AFC /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

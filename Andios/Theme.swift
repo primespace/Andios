@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class AppTheme
+open class Theme
 {
     public var colorPrimary = R.Color(0xffffff)
     public var colorPrimaryDark = R.Color(0xffffff)
