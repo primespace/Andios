@@ -47,6 +47,11 @@ public class MenuItem {
 public class Menu {
     
     public var menuItems: [MenuItem] = []
+    
+    public init()
+    {
+        
+    }
 
     public func addMenuItem(_ menuItem: MenuItem) {
         self.menuItems.append(menuItem)
