@@ -8,10 +8,10 @@
 
 import Foundation
 
-open class MenuInflater {
+public class MenuInflater {
 
-    open func inflate(_ menuId: R.ResId, _ menu: inout Menu)
-    {
-        
-    }
+//    open func inflate(_ menuId: R.ResId, _ menu: inout Menu)
+//    {
+//
+//    }
 }
