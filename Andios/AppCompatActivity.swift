@@ -73,7 +73,7 @@ open class AppCompatActivity: UIViewController, Context {
         }
     }
     
-    func setTitle(_ title: String, _ color: UIColor = UIColor.white)
+    open func setTitle(_ title: String, _ color: UIColor = UIColor.white)
     {
         let label = UILabel()
         label.text = title
@@ -82,11 +82,15 @@ open class AppCompatActivity: UIViewController, Context {
         self.navigationItem.titleView = label
     }
     
-    func setTheme(_ theme: Theme) {
+    open func setTheme(_ theme: Theme) {
         self.theme = theme;
     }
 
     open func onCreateOptionsMenu(_ menu: Menu) {
+        
+    }
+    
+    open func onOptionsItemSelected(_ item: MenuItem) {
         
     }
     
@@ -98,7 +102,7 @@ open class AppCompatActivity: UIViewController, Context {
         return ActionBar(self)
     }()
     
-    func getSupportActionBar() -> ActionBar {
+    public func getSupportActionBar() -> ActionBar {
         return self.actionBar
     }
     
@@ -106,7 +110,7 @@ open class AppCompatActivity: UIViewController, Context {
         return self
     }
     
-    func setHomeAsUpIndicator(_ drawable: R.ResId) {
+    public func setHomeAsUpIndicator(_ drawable: R.ResId) {
         if self.navigationController != nil {
             let image = UIImage(named: drawable.value)?.withRenderingMode(.alwaysOriginal)
             let icon = UIBarButtonItem(image: image, style:UIBarButtonItemStyle.plain, target: self, action: #selector(onToolbar_home(sender:)))
@@ -135,10 +139,6 @@ open class AppCompatActivity: UIViewController, Context {
     @objc private func onToolbar_right(sender: UIBarButtonItem) {
         let item = MenuItem(sender.tag, "")
         onOptionsItemSelected(item)
-    }
-    
-    open func onOptionsItemSelected(_ item: MenuItem) {
-
     }
     
     open func finish() {

@@ -8,47 +8,47 @@
 
 import Foundation
 
-open class MenuItem {
+public class MenuItem {
     
-    var subMenus: [Menu] = []
-    var actionId: Int = 0
-    var drawable: R.ResId = R.ResId("")
-    var titleId: R.ResId = R.ResId("")
-    var title: String = ""
+    public var subMenus: [Menu] = []
+    public var actionId: Int = 0
+    public var drawable: R.ResId = R.ResId("")
+    public var titleId: R.ResId = R.ResId("")
+    public var title: String = ""
     
-    init(_ actionId: Int, _ title: R.ResId) {
+    public init(_ actionId: Int, _ title: R.ResId) {
         self.actionId = actionId
         self.titleId = title
     }
     
-    init(_ actionId: Int, _ title: String) {
+    public init(_ actionId: Int, _ title: String) {
         self.actionId = actionId
         self.title = title
     }
     
-    init(_ actionId: Int, _ drawable: R.ResId, _ title: R.ResId) {
+    public init(_ actionId: Int, _ drawable: R.ResId, _ title: R.ResId) {
         self.actionId = actionId
         self.drawable = drawable
         self.titleId = title
     }
     
-    init(_ actionId: Int, _ drawable: R.ResId, _ title: String) {
+    public init(_ actionId: Int, _ drawable: R.ResId, _ title: String) {
         self.actionId = actionId
         self.drawable = drawable
         self.title = title
     }
     
-    func addMenu(_ menu: Menu) {
+    public func addMenu(_ menu: Menu) {
         self.subMenus.append(menu)
     }
 }
 
 
-open class Menu {
+public class Menu {
     
-    var menuItems: [MenuItem] = []
+    public var menuItems: [MenuItem] = []
 
-    func addMenuItem(_ menuItem: MenuItem) {
+    public func addMenuItem(_ menuItem: MenuItem) {
         self.menuItems.append(menuItem)
     }
 }
