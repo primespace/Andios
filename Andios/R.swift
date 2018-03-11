@@ -37,4 +37,25 @@ public class R {
     public class color {
         
     }
+    
+    public class id {
+        
+    }
+    
+    public class menu {
+        
+    }
+    
+    public class drawable {
+        
+    }
+    
+    public class layout {
+        
+    }
+    
+    public class string {
+        
+    }
 }
+
