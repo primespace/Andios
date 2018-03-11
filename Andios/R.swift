@@ -33,4 +33,8 @@ public class R {
             public static let home = 100000
         }
     }
+    
+    public class color {
+        
+    }
 }
