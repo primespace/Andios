@@ -10,26 +10,26 @@ import Foundation
 
 public class R {
     
-    struct ResId {
-        var value: String = ""
-        init(_ value: String) {
+    public struct ResId {
+        public var value: String = ""
+        public init(_ value: String) {
             self.value = value
         }
     }
     
-    struct Color {
-        var id = R.ResId("")
-        var value: Int = 0
-        init(_ value: Int) {
+    public struct Color {
+        public var id = R.ResId("")
+        public var value: Int = 0
+        public init(_ value: Int) {
             self.value = value
         }
-        init(_ id: R.ResId) {
+        public init(_ id: R.ResId) {
             self.id = id
         }
     }
     
-    class andriod {
-        class id {
+    public class android {
+        public class id {
             static let home = 100000
         }
     }
