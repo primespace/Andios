@@ -9,10 +9,10 @@
 import Foundation
 
 
-class Assert {
+public class Assert {
     
     
-    static func assertNotNull(_ obj: Any?) {
+    public static func assertNotNull(_ obj: Any?) {
         assert(obj != nil)
     }
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Logger {
+public class Logger {
     
-    static func d(_ str: String) {
+    public static func d(_ str: String) {
         print("[DEBUG] \(str)")
     }
 }
