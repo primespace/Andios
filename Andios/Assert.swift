@@ -15,4 +15,8 @@ public class Assert {
     public static func assertNotNull(_ obj: Any?) {
         assert(obj != nil)
     }
+    
+    public static func assertTrue(_ value: Bool) {
+        assert(value)
+    }
 }
