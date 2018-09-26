@@ -14,6 +14,8 @@ open class AppCompatActivity: UIViewController, Context {
 
     public var menu: Menu = Menu();
     
+    public var intent: Intent?
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,7 +56,7 @@ open class AppCompatActivity: UIViewController, Context {
         
         var navigationBar = true;
         
-        if let theme = intent.klass.theme {
+        if let theme = intent.targetActivity.theme {
             if theme.windowFullscreen {
                 navigationBar = false;
             } else {
@@ -65,11 +67,44 @@ open class AppCompatActivity: UIViewController, Context {
         }
         
         if navigationBar {
-            let vc = UINavigationController(rootViewController: intent.klass)
-            intent.context.present(vc, animated: true, completion: nil)
+            let vc = UINavigationController(rootViewController: intent.targetActivity)
+            Assert.assertNotNull(intent.targetActivity.intent)
+            if let activity = intent.sourceActivity {
+                activity.present(vc, animated: true, completion: nil)
+            } else {
+                self.presentRootViewController(vc, animated: true)
+            }
         } else {
-            let vc = intent.klass
-            intent.context.present(vc, animated: true, completion: nil)
+            let vc = intent.targetActivity
+            Assert.assertNotNull(intent.targetActivity.intent)
+            
+            if let activity = intent.sourceActivity {
+                activity.present(vc, animated: true, completion: nil)
+            } else {
+                self.presentRootViewController(vc, animated: true)
+            }
+        }
+    }
+    
+    private func presentRootViewController(_ rootViewController: UIViewController, animated: Bool) {
+        
+        self.view.endEditing(true)
+        
+        if(UIApplication.shared.delegate!.window == nil) {
+            Logger.d("UIApplication.shared.keyWindow is nil")
+        }
+        
+        if animated {
+            UIView.transition(with: UIApplication.shared.delegate!.window!!, duration: 0.5, options: .transitionCrossDissolve, animations: {
+                let oldState: Bool = UIView.areAnimationsEnabled
+                UIView.setAnimationsEnabled(false)
+                UIApplication.shared.delegate!.window!?.rootViewController = rootViewController
+                UIView.setAnimationsEnabled(oldState)
+            }, completion: { (finished: Bool) -> () in
+                // do nothing.
+            })
+        } else {
+            UIApplication.shared.delegate!.window!?.rootViewController = rootViewController
         }
     }
     
